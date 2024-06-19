@@ -1,0 +1,1 @@
+Final posterior is Normal { mean: 5.0375400116276845, variance: 0.00033118242533183693 }

@@ -1,0 +1,18 @@
+[package]
+name = "bayonese_py"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "bayonese_py"
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+paste = "1.0.15"
+pyo3 = { version = "0.21.2", features = ["multiple-pymethods"] }
+futures = { version = "0.3.30", features = ["executor"] }
+async-compat = "0.2.3"
+serde = { version = "1.0.198", features = ["derive"] }
+bayonese = { path = "../bayonese_rust" }
+nalgebra = { version = "0.32.6", features = ["serde-serialize"] }
