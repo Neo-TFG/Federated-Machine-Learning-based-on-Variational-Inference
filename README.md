@@ -14,7 +14,7 @@ To execute a test you must first setup the python library, check in [Pyo3's webp
 Once that is done, first execute the example_run.sh bash script from inside its directory, and then execute the create_clients.sh from the root of the directory. This last script has two arguments, the initial client number and final client number, both inclusive. Right now there are only 10 certificates uploaded so the maximum number is 10, and the lowest is 1, but more can be added if desired.
 
 If one wants to add different distributions to test, it should go into the lib.rs inside client_python and implement them there. Once that is done, that type should be wrapped using the compatibility macro.
-Then this type can be used from both the client and the server.
+Then this type can be used from both the client and the server. Do not forget to call maturin after making changes that are related to Python.
 
 
 
