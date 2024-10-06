@@ -9,7 +9,7 @@ The directories contain:
 - data: contains the data obtained from the experiments.
 - client_python: contains both the code of the python interface as an example client.
 
-To execute a test you must first setup the python library, check in [Pyo3's webpage](https://pyo3.rs/v0.21.2/), it mainly boils down to installing maturing in a virtual environment and executing maturin develop, but depending on the setup it could vary.
+To execute a test you must first setup the python library, check in [Pyo3's webpage](https://pyo3.rs/v0.21.2/), it mainly boils down to installing maturin in a virtual environment and executing maturin develop, but depending on the setup it could vary.
 
 Once that is done, first execute the example_run.sh bash script from inside its directory, and then execute the create_clients.sh from the root of the directory. This last script has two arguments, the initial client number and final client number, both inclusive. Right now there are only 10 certificates uploaded so the maximum number is 10, and the lowest is 1, but more can be added if desired.
 
